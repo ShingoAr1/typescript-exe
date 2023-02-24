@@ -78,7 +78,7 @@ const exerciseOne = () => {
     const sequence:Array<number> = Array.from(Array(10).keys());
     const animals:Array<string> = ['pangolin', 'aardvark', 'echidna', 'binturong'];
     const stringsAndNumbers:Array<number|string> = [1, 'one', 2, 'two', 3, 'three'];
-    const allMyArrays:any = [sequence, animals, stringsAndNumbers];
+    const allMyArrays:(string|number)[][] = [sequence, animals, stringsAndNumbers];
 
     console.log('Exercise 1.5', allMyArrays);
 
@@ -90,7 +90,7 @@ const exerciseOne = () => {
     // We want to represent an inventoryItem as a structure where
     // the first entry is the item name and the second is the quantity
 
-    const inventoryItem:any = ['fidget wibbit', 11];
+    const inventoryItem:[string,number] = ['fidget wibbit', 11];
 
     // later we destructure it
     const [name, qty] = inventoryItem;
